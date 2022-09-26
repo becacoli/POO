@@ -19,6 +19,10 @@ public class Order {
     items.add(orderItem);
   }
 
+  public void removeItem(OrderItem orderItem) {
+    items.remove(orderItem);
+  }
+
   public double total() {
     double sum = 0;
     for (OrderItem item : items) {
